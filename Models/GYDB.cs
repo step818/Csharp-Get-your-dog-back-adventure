@@ -30,5 +30,9 @@ namespace GetYourDogBack.Models
     {
       return ((user1 == Ans1) && (user2 == Ans2) && (user3 == Ans3));
     }
+    public bool Stoprobber(string signal1)
+    {
+      return (signal1 == Ans1);
+    }
   }
 }

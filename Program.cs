@@ -11,6 +11,7 @@ namespace GetYourDogBack
     {
       GYDB ignite = new GYDB("red", "white", null);
       GYDB shift = new GYDB("clutch", "shift", "throttle");
+      GYDB biteFace = new GYDB("operation dance party", null, null);
       string dog = "reachable";
       // Introduction
       Console.WriteLine("You drove to the store to pick up a few things. Your dog is in the backseat of your car. Unfortunately, that car became a robber's getaway car. You should hotwire a motorcycle to get your dog back. Hit enter to pull the wires out of the ignition.");
@@ -53,10 +54,31 @@ namespace GetYourDogBack
         if (shift.Hyperspeed(userSwitch1, userSwitch2, userSwitch3))
         {
           Console.WriteLine("Vrooooom!! You did it!! You're now zooming up to the tail of your car.");
+          Console.WriteLine("Hit enter to continue...");
+          string contin = Console.ReadLine();
         }
         else
         {
           Console.WriteLine("Oh no! You stalled the motorcycle and now the robber has gained too much distance for you to catch up to him.");
+          dog = "lost";
+          Console.WriteLine("Hit enter to continue...");
+          string contin = Console.ReadLine();
+        }
+        //Chapter 3 / Stop robber
+        Console.WriteLine("---------------------------");
+        Console.WriteLine("All you need to do now is give the signal to your dog, and it will take of stopping the robber by brutally biting his face off. But you have many signals for the dog that tell it to do different things and you can't remember which of the three ones you're thinking of it could be. The three possible signals are \"Attack!\", \"Roll over!\", or \"Operation Dance Party!\". Choose wisely to get your dog back.");
+        Console.WriteLine("-----------------------");
+        Console.WriteLine("Type the correct signal to yell to your dog (attack, roll over, operation dance party): ");
+        string userSignal = Console.ReadLine();
+        Console.WriteLine("-----------------------");
+        if (biteFace.Stoprobber(userSignal))
+        {
+          Console.WriteLine("Look at that dog bite the robber's face to pieces! You did it! The car stopped and you get your dog and car back. Good job.");
+          dog = "found";
+        }
+        else
+        {
+          Console.WriteLine("Oh no! That wasn't it. The motorcycle ran out of gas. The robber got away with your dog.");
           dog = "lost";
         }
       }
