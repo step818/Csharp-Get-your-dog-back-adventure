@@ -37,6 +37,7 @@ namespace GetYourDogBack
         {
           Console.WriteLine("You blew up the motorcycle");
           dog = "lost";
+          break;
         }
         Console.WriteLine("-----------------------");
         //Chapter 2 / Shift to hyperspeed
@@ -66,7 +67,7 @@ namespace GetYourDogBack
         }
         //Chapter 3 / Stop robber
         Console.WriteLine("---------------------------");
-        Console.WriteLine("All you need to do now is give the signal to your dog, and it will take of stopping the robber by brutally biting his face off. But you have many signals for the dog that tell it to do different things and you can't remember which of the three ones you're thinking of it could be. The three possible signals are \"Attack!\", \"Roll over!\", or \"Operation Dance Party!\". Choose wisely to get your dog back.");
+        Console.WriteLine("All you need to do now is give the signal to your dog, and it will stop the robber by brutally biting his face off. But you have many signals for the dog that tell it to do different things and you can't remember which of the three ones you're thinking of it could be. The three possible signals are \"Attack!\", \"Roll over!\", or \"Operation Dance Party!\". Choose wisely to get your dog back.");
         Console.WriteLine("-----------------------");
         Console.WriteLine("Type the correct signal to yell to your dog (attack, roll over, operation dance party): ");
         string userSignal = Console.ReadLine();

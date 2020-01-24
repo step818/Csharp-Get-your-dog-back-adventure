@@ -1,5 +1,4 @@
 C:\Users\steph\desktop\Text-Based-Adventure\obj\Debug\netcoreapp2.2\GYDB.csprojAssemblyReference.cache
-C:\Users\steph\desktop\Text-Based-Adventure\obj\Debug\netcoreapp2.2\GYDB.csproj.CoreCompileInputs.cache
 C:\Users\steph\desktop\Text-Based-Adventure\obj\Debug\netcoreapp2.2\GYDB.AssemblyInfoInputs.cache
 C:\Users\steph\desktop\Text-Based-Adventure\obj\Debug\netcoreapp2.2\GYDB.AssemblyInfo.cs
 C:\Users\steph\desktop\Text-Based-Adventure\bin\Debug\netcoreapp2.2\GYDB.deps.json
